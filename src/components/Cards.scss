@@ -1,0 +1,119 @@
+@import '../styles/_variables.scss';
+
+.cards {
+    display: grid;
+    gap: 1.5rem;
+    @media screen and (min-width: 1440px){
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.card {
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: top -.5rem right 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 2rem;
+    &.work {
+        background-image: url('../images/icon-work.svg');
+        background-color: $light-red-work;
+    }
+    &.play {
+        background-image: url('../images/icon-play.svg');
+        background-color: $soft-blue-play;
+    }
+    &.study {
+        background-image: url('../images/icon-study.svg');
+        background-color: $light-red-study;
+    }
+    &.exercise {
+        background-image: url('../images/icon-exercise.svg');
+        background-color: $lime-green-exercise;
+    }
+    &.social {
+        background-image: url('../images/icon-social.svg');
+        background-color: $violet-social;
+    }
+    &.self-care {
+        background-image: url('../images/icon-self-care.svg');
+        background-color: $soft-orange;
+    }
+    
+    .card-details {
+        width: calc(100% + 1px); /* offset for underlying visible background */
+        transform: translateY(1px); /* offset for underlying visible background */
+        background: $dark-blue;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        &:hover {
+            background: $more-desaturated-blue;
+            cursor: pointer;
+        }
+        
+        @media screen and (min-width: 1440px){
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 1.5rem;
+            min-width: 200px;
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            >h1 {
+                padding: 0;
+                margin: 0;
+                font-weight: 400;
+                font-size: 1.3rem;
+                @media screen and (min-width: 1440px){
+                    font-size: 1rem;
+                }
+            }
+            .card-more {
+                padding: .5rem 0;
+                svg path {
+                    fill: $desaturated-blue;
+                    color: $desaturated-blue;
+                }
+                &:hover path {
+                    fill: $pale-blue;
+                    color: $pale-blue;
+                    cursor: pointer;
+                }
+            }
+        }
+        .card-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media screen and (min-width: 1440px){
+                flex-direction: column;
+                align-items: flex-start;
+                gap: .5rem;
+            }
+
+            >h1 {
+                padding: 0;
+                margin: 0;
+                font-weight: 300;
+            }
+            
+            >p {
+                padding: 0;
+                margin: 0;
+                color: $pale-blue;
+                font-size: .8rem;
+            }
+        }
+        
+        
+    }
+    
+    
+    
+}
