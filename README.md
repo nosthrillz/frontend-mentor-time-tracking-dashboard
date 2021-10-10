@@ -4,16 +4,16 @@ This is a solution to the [Time tracking dashboard challenge](https://www.fronte
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshots](#screenshots)
-  - [Links](#links)
-- [Check it out](#check-it-out)
-  - [Live demo](#live-demo)
-  - [Explore the code](#explore-the-code)
-    - [Get the repo](#get-the-repo)
-    - [Install and run](#install-and-run)
-- [Tech stack](#tech-stack)
+-   [Overview](#overview)
+    -   [The challenge](#the-challenge)
+    -   [Screenshots](#screenshots)
+    -   [Links](#links)
+-   [Check it out](#check-it-out)
+    -   [Live demo](#live-demo)
+    -   [Explore the code](#explore-the-code)
+        -   [Get the repo](#get-the-repo)
+        -   [Install and run](#install-and-run)
+-   [Tech stack](#tech-stack)
 
 ## Overview
 
@@ -25,9 +25,9 @@ The challenge is to build out this dashboard and get it looking as close to the 
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Switch between viewing Daily, Weekly, and Monthly stats
+-   View the optimal layout for the site depending on their device's screen size
+-   See hover states for all interactive elements on the page
+-   Switch between viewing Daily, Weekly, and Monthly stats
 
 ### Screenshots
 
@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Live demo
 
-Head to XXXXXXXXXXXX to play around with the latest production deployment.
+Play around with the latest [Vercel deployment](https://frontend-mentor-time-tracking-dashboard-eight.vercel.app).
 
 ### See the code
 
